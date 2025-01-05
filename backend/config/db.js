@@ -1,11 +1,18 @@
-import mongoose from "mongoose";
+// DATABASE_URL = "ini adalah database url"
 
-export const connectDB = async () => {
-	try {
-		const conn = await mongoose.connect(process.env.MONGO_URI);
-		console.log(`MongoDB Connected: ${conn.connection.host}`);
-	} catch (error) {
-		console.error(`Error: ${error.message}`);
-		process.exit(1); // process code 1 code means exit with failure, 0 means success
-	}
-};
+const a = a => (a * a);
+console.log(a(2,3))
+const b = b => ( b * b);
+console.log(2,4)
+
+const hai = (name) => {
+  const hais= `haii ${name}`;
+  return hais;
+}
+console.log(hai("fadils"));
+
+function greet(name){
+  const greets = `hallo ${name}`
+  return greets;
+}
+console.log(greet("lizard"));

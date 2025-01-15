@@ -3,8 +3,10 @@ import env from "dotenv";
 const app = express();
 
 
-const hello =  hello => (hello * hello)
-hello(12,3)
+
+console.log(env)
+const hello = hello => (hello * hello)
+hello(12, 3)
 console.log(hello)
 console.log(process.env.MONGO_URL)
 app.listen(4000, () => {
